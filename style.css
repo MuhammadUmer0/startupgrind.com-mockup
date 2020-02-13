@@ -1,4 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Helvetica, Verdana, sans-serif;
+}
+:root{
+    --topNavBg: #F5F5F5;
+    --topNavCol: #333333;
+}
+/*top nav*/
+.topBar{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--topNavBg);
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.topBar .text{
+    width: 60%;
+    background-color: yellowgreen;
+    /* display: flex;
+    flex-direction: row; */
+}
+p{
+    font-size: 12px;
+    line-height: 25px;
+    color: var(--topNavCol);
+    background-color: crimson;
+    
 }
