@@ -86,6 +86,12 @@ a {
   text-decoration: none;
   color: white;
 }
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 section img {
   height: 500px;
   width: 100%;
@@ -162,11 +168,24 @@ section img {
   outline: none;
   cursor: pointer;
 }
-
 .about {
   height: 320px;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: var(--topNavCol);
+}
+.about img{
+    height: 50px;
+    width: 50px;
+
+}
+.Verhr{
+    /* height: 40%; */
+    width: 80%;
+    border-bottom: 1px solid var(--pink);
+}
+.aboutCol{
+
 }
