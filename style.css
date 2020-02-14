@@ -7,7 +7,7 @@
 :root {
   --topNavBg: #f5f5f5;
   --topNavCol: #333333;
-  --navHoverCol: rgb(255, 42, 69);
+  --pink: rgb(255, 42, 69);
   --offerGradient: linear-gradient(
     to right,
     rgb(255, 120, 95),
@@ -67,7 +67,7 @@ header a {
   color: black;
 }
 header a:hover {
-  color: var(--navHoverCol);
+  color: var(--pink);
 }
 /*offer*/
 .offer {
@@ -99,13 +99,21 @@ section img {
   justify-content: center;
   align-items: center;
 }
+.subscribe .form {
+  height: 43px;
+  width: 847px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 /*subscribe row text*/
 .subscribe .text {
   height: 64px;
-  width: 225px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   color: white;
 }
@@ -130,6 +138,19 @@ section img {
   background-color: black;
   outline: none;
   border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input:hover {
+  height: 43px;
+  width: 180px;
+  color: white;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  background-color: black;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--pink);
 }
 .subscribe button {
   height: 43px;
@@ -140,4 +161,12 @@ section img {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.about {
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--topNavCol);
 }
