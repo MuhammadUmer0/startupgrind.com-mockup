@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Helvetica, Verdana, sans-serif;
 }
+/*color collection*/
 :root {
   --topNavBg: #f5f5f5;
   --topNavCol: #333333;
@@ -13,6 +14,7 @@
     rgb(255, 42, 69),
     rgb(161, 67, 190)
   );
+  --subscribeBtn: #ff2945;
 }
 /*top nav*/
 .topBar {
@@ -29,11 +31,13 @@
     /* display: flex;
     flex-direction: row; 
 }*/
-p {
+/*top bar*/
+.topBar p {
   font-size: 12px;
   line-height: 25px;
   color: var(--topNavCol);
 }
+/*contains logo, nav*/
 header {
   height: 65px;
   display: flex;
@@ -41,6 +45,7 @@ header {
   align-items: center;
   justify-content: space-around;
 }
+/*logo img*/
 header img {
   width: 180px;
   height: 30px;
@@ -64,6 +69,7 @@ header a {
 header a:hover {
   color: var(--navHoverCol);
 }
+/*offer*/
 .offer {
   height: 38px;
   background-image: var(--offerGradient);
@@ -79,4 +85,59 @@ header a:hover {
 a {
   text-decoration: none;
   color: white;
+}
+section img {
+  height: 500px;
+  width: 100%;
+}
+/*subscribe row*/
+.subscribe {
+  height: 126px;
+  background-image: url("images/join-bg402x.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/*subscribe row text*/
+.subscribe .text {
+  height: 64px;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.subscribe h1 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 20px;
+  margin-bottom: 0.5em;
+}
+.subscribe p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.subscribe input {
+  height: 43px;
+  width: 180px;
+  color: white;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  background-color: black;
+  outline: none;
+  border: none;
+}
+.subscribe button {
+  height: 43px;
+  width: 180px;
+  background-color: var(--subscribeBtn);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
