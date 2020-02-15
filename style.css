@@ -16,6 +16,7 @@
     rgb(161, 67, 190)
   );
   --subscribeBtn: #ff2945;
+  --searchBg: #1c1c1c;
 }
 /*top nav*/
 .topBar {
@@ -145,6 +146,7 @@ section img {
   background-color: black;
   outline: none;
   border: none;
+  padding-left: 0.5em;
   border-bottom: 1px solid white;
 }
 .subscribe input:hover {
@@ -157,7 +159,21 @@ section img {
   background-color: black;
   outline: none;
   border: none;
+  padding-left: 0.5em;
   border-bottom: 1px solid var(--pink);
+}
+.subscribe input::placeholder {
+  height: 43px;
+  width: 180px;
+  color: white;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  background-color: black;
+  outline: none;
+  border: none;
+  padding-left: 0.5em;
+  border-bottom: 1px solid white;
 }
 .subscribe button {
   height: 43px;
@@ -236,7 +252,7 @@ section img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: black;
 }
 .events h1 {
@@ -264,9 +280,63 @@ section img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* position: absolute; */
   background-color: blue;
 }
 .imgRow img {
   height: 225px;
   width: 225px;
+}
+.events .content {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: crimson;
+  color: white;
+  position: relative;
+}
+.search{
+  height: 410px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--searchBg);
+  position: relative;
+  
+}
+.search img{
+  height: 410px;
+  width: 750px;
+}
+.search input{
+  width: 600px;
+  height: 75px;
+  position: absolute;
+  font-size: 26px;
+  line-height: 37px;
+  font-weight: 900;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.search input::placeholder{
+  width: 600px;
+  height: 75px;
+  position: absolute;
+  font-size: 26px;
+  line-height: 37px;
+  font-weight: 900;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
