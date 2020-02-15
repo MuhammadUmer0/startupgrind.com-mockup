@@ -176,8 +176,6 @@ section img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
-
 }
 .aboutContentRow img {
   height: 80px;
@@ -185,7 +183,6 @@ section img {
   margin-right: 1em;
 }
 .hr {
-  
   width: 80%;
   border-bottom: 1px solid var(--pink);
 }
@@ -200,7 +197,6 @@ section img {
   align-items: center;
   justify-content: space-around;
   align-items: flex-start;
-  
 }
 .aboutCol h1 {
   font-size: 22px;
@@ -232,19 +228,45 @@ section img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
 }
-.events{
-    width: 80%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--subscribeBtn);
+.events {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
-.events h1{
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 40px;
-    color:var(--heading);
+.events h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 40px;
+  color: var(--heading);
+}
+.events input {
+  width: 480px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 1px solid var(--pink);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  letter-spacing: 3px;
+  margin-top: 2em;
+}
+.events .imgRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: blue;
+}
+.imgRow img {
+  height: 225px;
+  width: 225px;
 }
