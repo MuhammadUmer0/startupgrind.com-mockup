@@ -7,6 +7,7 @@
 :root {
   --topNavBg: #f5f5f5;
   --topNavCol: #333333;
+  --heading: #333333;
   --pink: rgb(255, 42, 69);
   --offerGradient: linear-gradient(
     to right,
@@ -231,6 +232,19 @@ section img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: center; 
+}
+.events{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--subscribeBtn);
+}
+.events h1{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    color:var(--heading);
 }
