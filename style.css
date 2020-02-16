@@ -428,8 +428,46 @@ h6 a{
   width: 80%;
   background-color: var(--topNavBg);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .community-valuesCol{
-  
+  height: 413px;
+  width: 585px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+.community-valuesColHeading{
+    font-size: 14px;
+    color: var(--subscribeBtn);
+    line-height: 20px;
+    font-weight: 400;
+  text-transform: uppercase;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.community-valuesColContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.community-valuesColContent img{
+height: 144px;
+width: 145px;
+}
+.community-valuesColContent h1{
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 36px;
+  /* width: 70%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
