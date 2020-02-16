@@ -340,3 +340,11 @@ section img {
   border-right: none;
   border-left: none;
 }
+.explore{
+  width: 80%;
+  /* height: 200px; */
+  background-color: rgb(255, 42, 69);
+}
+.explore h1{
+  
+}
