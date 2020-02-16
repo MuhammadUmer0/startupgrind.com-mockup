@@ -538,3 +538,7 @@ text-transform: capitalize;
   font-weight: 700;
   text-transform: uppercase;
 }
+.linksCol a{ 
+  text-decoration: none;
+  color: #dddddd;
+}
