@@ -505,9 +505,36 @@ footer{
   width: 100%;
   background-color: var(--footerBgColor);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 footer img{
   height: 50px;
   width: 50px;
+}
+footer .content{
+  width: 80%;
+  height: 250px;
+  background-color: var(--subscribeBtn);
+}
+footer li{
+list-style-type: none;
+margin-bottom: 1em;
+font-size: 12px;
+font-weight: 400;
+line-height: 17px;
+color: #cccccc;
+text-transform: capitalize;
+}
+.linkCol{
+  display: flex;
+  flex-direction: column;
+}
+.linkHeading{
+  font-size: 12px;
+  line-height: 17px;
+  color: #dddddd;
+  font-weight: 700;
+  text-transform: uppercase;
 }
