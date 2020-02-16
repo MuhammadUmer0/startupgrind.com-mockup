@@ -18,6 +18,7 @@
   --subscribeBtn: #ff2945;
   --searchBg: #1c1c1c;
   --exploreLi: #8e8e8e;
+  --footerBgColor: #1A1A1A;
 }
 /*top nav*/
 .topBar {
@@ -465,9 +466,48 @@ width: 145px;
   font-size: 22px;
   font-weight: 900;
   line-height: 36px;
-  /* width: 70%; */
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 
+}
+/*subscribe row*/
+.subscribe {
+  height: 126px;
+  width: 100%;
+  background-image: url("images/join-bg402x.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe .form {
+  height: 43px;
+  width: 847px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/*subscribe row text*/
+.subscribe .text {
+  height: 64px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  color: white;
+}
+footer{
+  height: 600px;
+  width: 100%;
+  background-color: var(--footerBgColor);
+  display: flex;
+  justify-content: center;
+}
+footer img{
+  height: 50px;
+  width: 50px;
 }
