@@ -602,8 +602,8 @@ footer li {
   flex-direction: row;
   justify-content: space-between;
 }
-.socialImg img {
-}
+/* .socialImg img {
+} */
 .copyright {
   width: 85%;
   display: flex;
