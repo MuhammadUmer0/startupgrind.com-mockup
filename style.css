@@ -282,7 +282,7 @@ section img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* position: absolute; */
+  position: relative;
   background-color: blue;
 }
 .imgRow img {
@@ -291,12 +291,13 @@ section img {
 }
 .events .content {
   height: 100px;
-  width: 100%;
+  width: 80%;
+  margin-top: 13em;
   display: flex;
   flex-direction: row;
   background-color: crimson;
   color: white;
-  position: relative;
+  position: absolute;
 }
 .search {
   height: 410px;
