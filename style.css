@@ -426,11 +426,17 @@ h6 a{
 }
 .community-values{
   height: 540px;
-  width: 80%;
+  width: 85%;
   background-color: var(--topNavBg);
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+
+}
+.community-values .Verhr {
+  border-left: 1px solid var(--pink);
+  height: 26em;
 }
 .community-valuesCol{
   height: 413px;
@@ -440,6 +446,7 @@ h6 a{
   justify-content: center;
   align-items: center;
   background-color: gray;
+  
 }
 .community-valuesColHeading{
     font-size: 14px;
@@ -447,9 +454,10 @@ h6 a{
     line-height: 20px;
     font-weight: 400;
   text-transform: uppercase;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
 }
 .community-valuesColContent{
   display: flex;
@@ -457,6 +465,7 @@ h6 a{
   justify-content: center;
   align-items: center;
   background-color: aqua;
+  color: #333333;
 }
 .community-valuesColContent img{
 height: 144px;
@@ -466,11 +475,35 @@ width: 145px;
   font-size: 22px;
   font-weight: 900;
   line-height: 36px;
-  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 
+
+
+}
+.community-valuesColContent button{
+  height:50px;
+  width:210px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #333333;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.community-valuesColContent button:hover{
+  height:50px;
+  width:210px;
+  background-color: #333333;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
 }
 /*subscribe row*/
 .subscribe {
