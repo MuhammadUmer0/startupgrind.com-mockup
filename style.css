@@ -18,7 +18,7 @@
   --subscribeBtn: #ff2945;
   --searchBg: #1c1c1c;
   --exploreLi: #8e8e8e;
-  --footerBgColor: #1A1A1A;
+  --footerBgColor: #1a1a1a;
 }
 /*top nav*/
 .topBar {
@@ -123,7 +123,6 @@ section img {
   width: 300px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   color: white;
 }
@@ -190,6 +189,7 @@ section img {
 .about {
   height: 170px;
   width: 80%;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -255,7 +255,6 @@ section img {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: black;
 }
 .events h1 {
   font-size: 36px;
@@ -283,7 +282,6 @@ section img {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  background-color: blue;
 }
 .imgRow img {
   height: 225px;
@@ -291,13 +289,22 @@ section img {
 }
 .events .content {
   height: 100px;
-  width: 80%;
-  margin-top: 13em;
+  width: 84%;
+  margin-top: 16em;
   display: flex;
   flex-direction: row;
-  background-color: crimson;
+  justify-content: space-around;
+
   color: white;
   position: absolute;
+}
+.events .content .col {
+  height: inherit;
+  width: 195px;
+  padding-left: 1em;
+  padding-top: 1em;
+  background-color: white;
+  color: black;
 }
 .search {
   height: 410px;
@@ -305,6 +312,7 @@ section img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5em;
   background-color: var(--searchBg);
   position: relative;
 }
@@ -410,22 +418,21 @@ section img {
   font-weight: 400;
   color: var(--heading);
 }
-h6{
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 21px;
-  color: #333333;
-  margin-top: 4em;
-  
-}
-h6 a{
+h6 {
   font-size: 15px;
   font-weight: 700;
   line-height: 21px;
   color: #333333;
   margin-top: 4em;
 }
-.community-values{
+h6 a {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 4em;
+}
+.community-values {
   height: 540px;
   width: 85%;
   background-color: var(--topNavBg);
@@ -433,59 +440,58 @@ h6 a{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
+}
+.community-values .imgRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .community-values .Verhr {
   border-left: 1px solid var(--pink);
   height: 26em;
 }
-.community-valuesCol{
-  height: 413px;
+.community-valuesCol {
+  height: 450px;
   width: 585px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: gray;
-  
 }
-.community-valuesColHeading{
-    font-size: 14px;
-    color: var(--subscribeBtn);
-    line-height: 20px;
-    font-weight: 400;
+.community-valuesColHeading {
+  font-size: 14px;
+  color: var(--subscribeBtn);
+  line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #333333;
 }
-.community-valuesColContent{
+.community-valuesColContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
   color: #333333;
 }
-.community-valuesColContent img{
-height: 144px;
-width: 145px;
+.community-valuesColContent img {
+  height: 144px;
+  width: 145px;
 }
-.community-valuesColContent h1{
+.community-valuesColContent h1 {
   font-size: 22px;
   font-weight: 900;
   line-height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
-.community-valuesColContent button{
-  height:50px;
-  width:210px;
+.community-valuesColContent button {
+  height: 50px;
+  width: 210px;
   background-color: transparent;
   color: black;
   border: 1px solid #333333;
@@ -495,9 +501,9 @@ width: 145px;
   line-height: 19px;
   font-weight: 700;
 }
-.community-valuesColContent button:hover{
-  height:50px;
-  width:210px;
+.community-valuesColContent button:hover {
+  height: 50px;
+  width: 210px;
   background-color: #333333;
   color: white;
   text-transform: capitalize;
@@ -534,7 +540,7 @@ width: 145px;
   align-items: center;
   color: white;
 }
-footer{
+footer {
   height: 600px;
   width: 100%;
   background-color: var(--footerBgColor);
@@ -544,42 +550,42 @@ footer{
   justify-content: space-around;
   /* justify-content: center; */
 }
-footer img{
+footer img {
   height: 50px;
   width: 50px;
 }
-footer .content{
+footer .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 80%;
   height: 250px;
 }
-footer li{
-list-style-type: none;
-margin-bottom: 1.5em;
-font-size: 12px;
-font-weight: 400;
-line-height: 17px;
-color: #cccccc;
-text-transform: capitalize;
+footer li {
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #cccccc;
+  text-transform: capitalize;
 }
-.linkCol{
+.linkCol {
   display: flex;
   flex-direction: column;
 }
-.linkHeading{
+.linkHeading {
   font-size: 12px;
   line-height: 17px;
   color: #dddddd;
   font-weight: 700;
   text-transform: uppercase;
 }
-.linksCol a{ 
+.linksCol a {
   text-decoration: none;
   color: #dddddd;
 }
-.social{
+.social {
   height: 70px;
   width: 321px;
   display: flex;
@@ -590,17 +596,15 @@ text-transform: capitalize;
   font-weight: 400;
   line-height: 20px;
   color: #dddddd;
-
 }
-.socialImg{
+.socialImg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.socialImg img{
-
+.socialImg img {
 }
-.copyright{
+.copyright {
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -610,7 +614,7 @@ text-transform: capitalize;
   font-weight: 400;
   color: #999999;
 }
-.footerLogo a{
+.footerLogo a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -621,7 +625,7 @@ text-transform: capitalize;
   line-height: 14px;
   color: rgb(153, 153, 153);
 }
-.footerLogo:hover a{
+.footerLogo:hover a {
   display: flex;
   align-items: center;
   justify-content: space-between;
